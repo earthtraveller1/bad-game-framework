@@ -11,6 +11,18 @@ pub struct Color {
     alpha: f32,
 }
 
+pub mod colors {
+    use super::Color;
+
+    pub const WHITE: Color = Color { red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0 };
+    pub const BLACK: Color = Color { red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0 };
+    pub const RED: Color = Color { red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0 };
+    pub const GREEN: Color = Color { red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0 };
+    pub const BLUE: Color = Color { red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0 };
+    pub const CYAN: Color = Color { red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0 };
+    pub const YELLOW: Color = Color { red: 1.0, green: 1.0, blue: 0.0, alpha: 1.0 };
+}
+
 impl Color {
     fn to_vec(&self) -> math::Vector4<f32> {
         math::Vector4 {
