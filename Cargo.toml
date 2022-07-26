@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "bgf",
+    "glad-gl"
+]
