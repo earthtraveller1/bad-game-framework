@@ -1,6 +1,6 @@
-mod graphics;
-mod math;
-mod ui;
+pub mod graphics;
+pub mod math;
+pub mod ui;
 
 use glad_gl::gl;
 use glfw::Context;
